@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sacrifice Shooter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <canvas id="game-canvas"></canvas>
+      <div id="ui-panel">
+        <div id="stats">
+          <p>Health: <span id="health-value">100</span></p>
+          <p>Score: <span id="score-value">0</span></p>
+        </div>
+        <div id="abilities">
+          <button id="ability-killall" data-cost="20">
+            💣 Kill All (20 HP)
+          </button>
+          <button id="ability-shield" data-cost="15">🛡️ Shield (15 HP)</button>
+          <button id="ability-speed" data-cost="10">
+            🔥 Speed Boost (10 HP)
+          </button>
+        </div>
+      </div>
+      <div id="game-over-screen" class="hidden">
+        <h1>Game Over!</h1>
+        <p>Final Score: <span id="final-score">0</span></p>
+        <button id="restart-button">Play Again</button>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
